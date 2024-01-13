@@ -1,0 +1,23 @@
+.header {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  p {
+    margin: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  color: #00ffe7;
+  text-shadow:
+    0 0 10px #00a1ff,
+    0 0 30px #00a1ff;
+}

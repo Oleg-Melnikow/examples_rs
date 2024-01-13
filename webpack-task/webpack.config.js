@@ -6,6 +6,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
+    assetModuleFilename: "assets/[hash][ext]",
+  },
+  resolve: {
+    alias: {
+      helpers: path.resolve(__dirname, "./src/helpers"),
+    },
   },
   mode: "development",
   module: {
@@ -35,6 +41,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+        type: "asset/resource",
       },
     ],
   },
