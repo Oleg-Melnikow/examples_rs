@@ -1,0 +1,1 @@
+import"./index.scss";import img from"./assets/meme_1.png";const{body}=document,root=document.createElement("div");root.id="root";const image=document.createElement("img");image.className="picture",image.src=img,image.alt="picture",root.append(image),body.prepend(root),console.log(body);

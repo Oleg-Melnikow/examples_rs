@@ -1,0 +1,1 @@
+import"./index.scss";const img=require("./assets/memme_1.png"),{body}=document,root=document.createElement("div");root.id="root";const image=document.createElement("img");image.className="picture",image.src=img,image.alt="picture",root.append(image),body.prepend(root),console.log(body);
